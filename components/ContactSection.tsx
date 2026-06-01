@@ -45,8 +45,8 @@ export default function ContactSection() {
       {/* ─── FULL-BLEED CINEMATIC BACKGROUND ─── */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=2000"
-          alt="Golden hour K2 / Karakoram peak with small red-roofed guesthouse in Skardu valley"
+          src="/images/composite_van_mosque.jpg"
+          alt="Hannan Balti Tours real traveler moments — Badshahi Mosque, Fairy Meadows group, and client in van"
           fill
           className="object-cover object-center"
           sizes="100vw"

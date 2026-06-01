@@ -9,14 +9,14 @@ const destinations = [
     id: 'hunza',
     name: 'HUNZA VALLEY',
     description: 'Baltit Fort · Attabad Lake · Passu Cones · Khunjerab Pass',
-    url: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=1600',
+    url: '/images/karakoram_highway.jpg',
     href: '#contact',
   },
   {
     id: 'skardu',
     name: 'SKARDU & DEOSAI',
     description: 'Shangrila · Deosai National Park · K2 Gateway · Sarfaranga Desert',
-    url: 'https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=1600',
+    url: '/images/deosai_plains.jpg',
     href: '#contact',
   },
   {
@@ -30,7 +30,7 @@ const destinations = [
     id: 'chitral',
     name: 'CHITRAL & KALASH',
     description: 'Shandur Polo · Kalash Culture · Lowari Pass · Ancient Valleys',
-    url: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=1600',
+    url: '/images/kalash_chitral.jpg',
     href: '#contact',
   },
 ];

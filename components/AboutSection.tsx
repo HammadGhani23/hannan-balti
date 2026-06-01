@@ -10,8 +10,8 @@ const timelineItems = [
     label: 'HUNZA VALLEY',
     description: 'Baltit Fort · Attabad Lake · Passu Cones · Khunjerab Pass',
     images: [
-      { url: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?q=80&w=600', rotation: -3, top: '0', left: '-10px' },
-      { url: 'https://images.unsplash.com/photo-1621841315897-b8519d855715?q=80&w=600', rotation: 4, top: '60px', left: '90px' },
+      { url: '/images/karakoram_highway.jpg', rotation: -3, top: '0', left: '-10px' },
+      { url: '/images/client_tree_pose.jpg', rotation: 4, top: '60px', left: '90px' },
     ],
   },
   {
@@ -19,8 +19,8 @@ const timelineItems = [
     label: 'SKARDU & DEOSAI',
     description: 'Shangrila · Sheosar Lake · Sarfaranga Desert · K2 Gateway',
     images: [
-      { url: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600', rotation: 2, top: '0', left: '0' },
-      { url: 'https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=600', rotation: -4, top: '55px', left: '85px' },
+      { url: '/images/deosai_plains.jpg', rotation: 2, top: '0', left: '0' },
+      { url: '/images/cold_desert_skardu.jpg', rotation: -4, top: '55px', left: '85px' },
     ],
   },
   {
@@ -28,7 +28,7 @@ const timelineItems = [
     label: 'FAIRY MEADOWS',
     description: 'Nanga Parbat basecamp · World\'s most scenic trek',
     images: [
-      { url: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=600', rotation: -2, top: '0', left: '-5px' },
+      { url: '/images/composite_van_mosque.jpg', rotation: -2, top: '0', left: '-5px' },
       { url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600', rotation: 3, top: '65px', left: '88px' },
     ],
   },
@@ -37,8 +37,8 @@ const timelineItems = [
     label: 'CHITRAL & KALASH',
     description: 'Shandur Pass · Kalash Valley · Polo at the top of the world',
     images: [
-      { url: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=600', rotation: 3, top: '0', left: '0' },
-      { url: 'https://images.unsplash.com/photo-1486916856992-e4db22c8df33?q=80&w=600', rotation: -3, top: '58px', left: '92px' },
+      { url: '/images/kalash_chitral.jpg', rotation: 3, top: '0', left: '0' },
+      { url: '/images/client_backpack.jpg', rotation: -3, top: '58px', left: '92px' },
     ],
   },
 ];

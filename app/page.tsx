@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
+import ParallaxBanner from '@/components/ParallaxBanner';
 import SocialProofSection from '@/components/SocialProofSection';
 import IncludedSection from '@/components/IncludedSection';
 import DestinationsSection from '@/components/DestinationsSection';
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <AboutSection />
+      <ParallaxBanner />
       <SocialProofSection />
       <IncludedSection />
       <DestinationsSection />

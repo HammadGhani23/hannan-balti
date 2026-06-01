@@ -30,7 +30,11 @@ export default function WhatsAppBubble() {
       </AnimatePresence>
 
       <motion.div
-        whileHover={{ scale: 1.08 }}
+        whileHover={{ scale: 1.1 }}
+        animate={{ scale: [1, 1.04, 1] }}
+        transition={{
+          scale: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
+        }}
         className="whatsapp-pulse w-14 h-14 rounded-full bg-[#5EC2C2] flex items-center justify-center shadow-lg"
       >
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#0A0F0F">

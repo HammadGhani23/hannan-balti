@@ -6,29 +6,29 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const polaroidCards = [
   {
-    url: 'https://images.unsplash.com/photo-1621841315897-b8519d855715?q=80&w=800',
+    url: '/images/client_tree_pose.jpg',
     caption: '4 epic destinations',
-    label: 'Attabad Lake',
+    label: 'Hunza Valley',
   },
   {
-    url: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=800',
+    url: '/images/cold_desert_skardu.jpg',
     caption: 'custom itineraries',
-    label: 'Fairy Meadows',
+    label: 'Skardu Desert',
   },
   {
-    url: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800',
+    url: '/images/deosai_plains.jpg',
     caption: 'international guides',
     label: 'Deosai Plains',
   },
   {
-    url: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800',
+    url: '/images/karakoram_highway.jpg',
     caption: '5 languages spoken',
     label: 'Karakoram Highway',
   },
   {
-    url: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800',
+    url: '/images/kalash_chitral.jpg',
     caption: 'your trip, your pace',
-    label: 'Jeep in Chitral',
+    label: 'Kalash Valley',
   },
 ];
 
@@ -58,8 +58,8 @@ export default function Hero() {
         style={{ y: bgY, willChange: 'transform' }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=2000"
-          alt="Passu Cones at dawn — cinematic, towering glaciers in amber light, Pakistan"
+          src="/images/client_tree_pose.jpg"
+          alt="Hannan Balti — Client standing on one foot in tree pose in front of blossom trees and snowy peaks"
           fill
           priority
           className="object-cover object-center"
@@ -128,7 +128,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=2000"
+            src="/images/client_tree_pose.jpg"
             alt=""
             fill
             priority
@@ -151,26 +151,8 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* ─── FOREGROUND PLANE: Solitary Hiker Figure (z-index: 3, highest) ─── */}
+      {/* ─── FOREGROUND PLANE: Social Icons Stack (z-index: 3) ─── */}
       <div className="absolute inset-0 z-[3] pointer-events-none">
-        {/* Foreground figure — solitary adventure operator/hiker on the right, completely static */}
-        <div className="absolute bottom-0 right-[8vw] w-[20vw] max-w-[340px] min-w-[180px]">
-          <div className="relative w-full" style={{ paddingBottom: '160%' }}>
-            <Image
-              src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=800"
-              alt="Hannan Balti — Solitary explorer in Gilgiti cap looking towards Karakoram Peaks"
-              fill
-              priority
-              className="object-cover object-top"
-              sizes="20vw"
-              style={{
-                maskImage: 'linear-gradient(to top, transparent 0%, black 25%, black 100%)',
-                WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 25%, black 100%)',
-              }}
-            />
-          </div>
-        </div>
-
         {/* Right social icons — faint outline fixed-esque stack */}
         <div className="absolute right-7 top-1/2 -translate-y-1/2 flex flex-col items-center gap-5 pointer-events-auto">
           <div className="w-px h-16 bg-white/10" />
