@@ -152,4 +152,18 @@ export default function DestinationsSection() {
             className="text-center"
           >
             <p className="section-number mb-2">04 — WHERE TO ESCAPE</p>
-            <h2 className
+            <h2 className="section-heading whitespace-nowrap">DESTINATIONS</h2>
+          </motion.div>
+          <div className="hairline" />
+        </div>
+
+        {/* Stack of full-width horizontal rows */}
+        <div className="flex flex-col gap-6 relative z-10">
+          {destinations.map((dest, i) => (
+            <DestinationCard key={dest.id} dest={dest} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
