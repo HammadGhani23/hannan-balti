@@ -26,6 +26,7 @@
 
   html {
     scroll-behavior: auto;
+    overflow-x: hidden;
   }
 
   body {
@@ -129,6 +130,13 @@
     font-size: clamp(4rem, 10vw, 9rem);
     letter-spacing: 0.04em;
     line-height: 0.9;
+  }
+
+  @media (max-width: 767px) {
+    .section-heading {
+      font-size: clamp(2.2rem, 9vw, 4rem);
+      letter-spacing: 0.02em;
+    }
   }
 
   /* Image fade-in */

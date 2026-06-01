@@ -214,16 +214,16 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section label heading with hairline side rules */}
         <div className="flex items-center gap-4 mb-20" ref={headingRef}>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
           <motion.h2
             initial={{ opacity: 0, scale: 0.96 }}
             animate={headingInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="section-heading text-center whitespace-nowrap"
+            className="section-heading text-center whitespace-normal md:whitespace-nowrap w-full md:w-auto"
           >
             THE GUIDE
           </motion.h2>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
         </div>
 
         {/* Two-column layout */}

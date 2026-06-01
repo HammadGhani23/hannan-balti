@@ -143,17 +143,17 @@ export default function SocialProofSection() {
       {/* Heading */}
       <div className="px-8 lg:px-16 mb-16">
         <div className="flex items-center gap-4" ref={headingRef}>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={headingInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-center"
+            className="text-center w-full md:w-auto"
           >
             <p className="section-number mb-2">02 — TRUSTED BY CREATORS</p>
-            <h2 className="section-heading whitespace-nowrap">AS SEEN WITH</h2>
+            <h2 className="section-heading whitespace-normal md:whitespace-nowrap w-full">AS SEEN WITH</h2>
           </motion.div>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
         </div>
       </div>
 

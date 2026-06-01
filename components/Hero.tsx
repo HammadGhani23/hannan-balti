@@ -154,7 +154,7 @@ export default function Hero() {
       {/* ─── FOREGROUND PLANE: Social Icons Stack (z-index: 3) ─── */}
       <div className="absolute inset-0 z-[3] pointer-events-none">
         {/* Right social icons — faint outline fixed-esque stack */}
-        <div className="absolute right-7 top-1/2 -translate-y-1/2 flex flex-col items-center gap-5 pointer-events-auto">
+        <div className="absolute right-7 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center gap-5 pointer-events-auto">
           <div className="w-px h-16 bg-white/10" />
           <a
             href="https://instagram.com/hannanbalti"
@@ -237,14 +237,29 @@ export default function Hero() {
         </div>
 
         {/* ─── POLAROID CARD STRIP (translating horizontally) ─── */}
+        {/* Desktop Strip: scroll-linked translation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
-          className="pointer-events-auto"
+          className="pointer-events-auto hidden md:block"
           style={{ x: stripX, willChange: 'transform' }}
         >
           <div className="flex gap-5 w-max">
+            {polaroidCards.map((card, i) => (
+              <PolaroidCard key={i} card={card} index={i} />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Mobile Strip: edge-to-edge touch-scroll carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
+          className="pointer-events-auto block md:hidden w-[calc(100%+4rem)] -mx-8 px-8 overflow-x-auto no-scrollbar"
+        >
+          <div className="flex gap-4 w-max pb-4">
             {polaroidCards.map((card, i) => (
               <PolaroidCard key={i} card={card} index={i} />
             ))}

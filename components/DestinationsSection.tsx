@@ -101,28 +101,28 @@ function DestinationCard({
 
       {/* Card Content Row */}
       <div className="absolute inset-0 flex flex-col justify-center px-8 lg:px-16">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between items-start justify-center gap-3 md:gap-8 w-full">
           <div>
-            <p className="font-nav text-[#5EC2C2] text-[10px] tracking-widest mb-2">
+            <p className="font-nav text-[#5EC2C2] text-[10px] tracking-widest mb-1.5 md:mb-2">
               04.{String(index + 1).padStart(2, '0')} — EXPEDITION REGION
             </p>
             <h3
-              className="font-display text-white mb-2"
-              style={{ fontSize: 'clamp(2rem, 4.5vw, 4.2rem)', letterSpacing: '0.04em', lineHeight: 1 }}
+              className="font-display text-white mb-1.5 md:mb-2"
+              style={{ fontSize: 'clamp(1.6rem, 4.5vw, 4.2rem)', letterSpacing: '0.04em', lineHeight: 1 }}
             >
               {dest.name}
             </h3>
-            <p className="font-nav text-[#888888] text-[11px] tracking-wider">
+            <p className="font-nav text-[#888888] text-[10px] md:text-[11px] tracking-wider leading-relaxed">
               {dest.description}
             </p>
           </div>
 
-          {/* Explore button on the right */}
+          {/* Explore button */}
           <motion.a
             href={dest.href}
-            animate={{ opacity: hovered ? 1 : 0.3, x: hovered ? 0 : 8 }}
+            animate={{ opacity: hovered ? 1 : 0.6, x: hovered ? 0 : 8 }}
             transition={{ duration: 0.3 }}
-            className="font-nav text-[#5EC2C2] text-[10px] tracking-widest flex items-center gap-2 flex-shrink-0 ml-8"
+            className="font-nav text-[#5EC2C2] text-[10px] tracking-widest flex items-center gap-2 flex-shrink-0 ml-0 md:ml-8 mt-1 md:mt-0"
           >
             Explore
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -144,17 +144,17 @@ export default function DestinationsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Heading with horizontal rules */}
         <div className="flex items-center gap-4 mb-20" ref={headingRef}>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={headingInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-center"
+            className="text-center w-full md:w-auto"
           >
             <p className="section-number mb-2">04 — WHERE TO ESCAPE</p>
-            <h2 className="section-heading whitespace-nowrap">DESTINATIONS</h2>
+            <h2 className="section-heading whitespace-normal md:whitespace-nowrap w-full">DESTINATIONS</h2>
           </motion.div>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
         </div>
 
         {/* Stack of full-width horizontal rows */}

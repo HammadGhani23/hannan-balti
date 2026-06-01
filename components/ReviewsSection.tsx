@@ -100,17 +100,17 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Heading with hairline rules */}
         <div className="flex items-center gap-4 mb-20" ref={headingRef}>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             animate={headingInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-center"
+            className="text-center w-full md:w-auto"
           >
             <p className="section-number mb-2">05 — EXPERIENCES</p>
-            <h2 className="section-heading whitespace-nowrap text-center">WHAT TRAVELERS SAY</h2>
+            <h2 className="section-heading whitespace-normal md:whitespace-nowrap text-center w-full">WHAT TRAVELERS SAY</h2>
           </motion.div>
-          <div className="hairline" />
+          <div className="hairline hidden md:block" />
         </div>
 
         {/* 3-column Grid layout */}
