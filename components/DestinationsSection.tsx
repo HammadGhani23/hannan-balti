@@ -20,11 +20,11 @@ const destinations = [
       'Attabad Lake — turquoise glacial wonder',
       'Passu Cathedral Cones sunrise trek',
       'Khunjerab Pass — highest paved border crossing',
-      'Eagle's Nest viewpoint over the valley',
+      "Eagle's Nest viewpoint over the valley",
       'Karimabad Bazaar & local apricot cuisine',
     ],
     about:
-      'Hunza Valley is one of the most breathtaking places on Earth — a legendary land of longevity, ancient forts, and glacier-fed lakes framed by the Karakoram giants. Hannan personally navigates every road, ensuring your journey is seamless, culturally rich, and utterly unforgettable.',
+      "Hunza Valley is one of the most breathtaking places on Earth — a legendary land of longevity, ancient forts, and glacier-fed lakes framed by the Karakoram giants. Hannan personally navigates every road, ensuring your journey is seamless, culturally rich, and utterly unforgettable.",
   },
   {
     id: 'skardu',
@@ -44,7 +44,7 @@ const destinations = [
       'Shigar Fort & ancient Balti culture',
     ],
     about:
-      'Skardu is the crown jewel of Baltistan — a stark, dramatic high-altitude world where vast golden deserts meet icy lakes and the world's highest peaks. Hannan, born and raised in the region, brings an authentic, insider perspective that no outsider can replicate.',
+      "Skardu is the crown jewel of Baltistan — a stark, dramatic high-altitude world where vast golden deserts meet icy lakes and the world's highest peaks. Hannan, born and raised in the region, brings an authentic, insider perspective that no outsider can replicate.",
   },
   {
     id: 'fairy',
@@ -64,7 +64,7 @@ const destinations = [
       'Stargazing at altitude with zero light pollution',
     ],
     about:
-      "Fairy Meadows lives up to its name — a lush green paradise sitting directly beneath the sheer south face of Nanga Parbat, the 'Killer Mountain'. The jeep track to reach it is legendary in itself. Hannan knows every metre of this journey and ensures absolute safety paired with peak adventure.",
+      "Fairy Meadows lives up to its name — a lush green paradise sitting directly beneath the sheer south face of Nanga Parbat, the Killer Mountain. The jeep track to reach it is legendary in itself. Hannan knows every metre of this journey and ensures absolute safety paired with peak adventure.",
   },
   {
     id: 'chitral',
@@ -84,7 +84,7 @@ const destinations = [
       'Traditional Kalash festivals (Chilam Joshi, Uchal)',
     ],
     about:
-      'Chitral is Pakistan's best-kept cultural secret — home to the ancient Kalash people, a unique non-Muslim minority with their own language, traditions, and vibrant festivals. Pair that with dramatic mountain passes and the world's highest polo ground, and you have a journey unlike anything else on Earth.',
+      "Chitral is Pakistan's best-kept cultural secret — home to the ancient Kalash people, a unique non-Muslim minority with their own language, traditions, and vibrant festivals. Pair that with dramatic mountain passes and the world's highest polo ground, and you have a journey unlike anything else on Earth.",
   },
 ];
 
