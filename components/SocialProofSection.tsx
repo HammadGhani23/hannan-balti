@@ -71,7 +71,7 @@ function InfluencerModal({ creator, onClose }: { creator: Creator; onClose: () =
     <Modal isOpen onClose={onClose} maxWidth="660px">
       <div style={{ position: 'relative' }}>
         {/* Hero image */}
-        <div style={{ position: 'relative', height: '280px', borderRadius: '16px 16px 0 0', overflow: 'hidden' }}>
+        <div className="modal-hero-img-container" style={{ borderRadius: '16px 16px 0 0' }}>
           <Image
             src={creator.url}
             alt={creator.name}
@@ -82,7 +82,7 @@ function InfluencerModal({ creator, onClose }: { creator: Creator; onClose: () =
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(17,24,24,1) 0%, rgba(17,24,24,0.2) 65%, transparent 100%)' }} />
 
           {/* Platform badge */}
-          <div style={{ position: 'absolute', top: '1rem', left: '1.5rem', background: 'rgba(10,15,15,0.8)', border: '1px solid rgba(94,194,194,0.25)', borderRadius: '999px', padding: '5px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <div style={{ position: 'absolute', top: '1rem', left: '1.25rem', background: 'rgba(10,15,15,0.8)', border: '1px solid rgba(94,194,194,0.25)', borderRadius: '999px', padding: '5px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}>
             {creator.icon === 'youtube' ? (
               <svg width="10" height="10" viewBox="0 0 24 24" fill="#5EC2C2">
                 <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805z" />
@@ -97,7 +97,7 @@ function InfluencerModal({ creator, onClose }: { creator: Creator; onClose: () =
             <span className="font-nav" style={{ color: '#5EC2C2', fontSize: '9px' }}>{creator.platform}</span>
           </div>
 
-          <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.75rem' }}>
+          <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem' }}>
             <p className="font-nav" style={{ color: '#5EC2C2', fontSize: '10px', marginBottom: '5px' }}>{creator.tag}</p>
             <h2 className="font-display" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', letterSpacing: '0.06em', color: '#FAFAFA', lineHeight: 1 }}>
               {creator.name}
@@ -106,26 +106,14 @@ function InfluencerModal({ creator, onClose }: { creator: Creator; onClose: () =
         </div>
 
         {/* Content */}
-        <div style={{ padding: '1.75rem 2rem 2rem' }}>
-
+        <div className="modal-content-padding">
           {/* Stats pills */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '1.5rem' }}>
+          <div className="modal-meta-pills">
             {[
               { icon: '👥', value: creator.followers },
               { icon: '🌍', value: creator.nationality },
             ].map((s) => (
-              <div
-                key={s.value}
-                style={{
-                  background: 'rgba(94,194,194,0.08)',
-                  border: '1px solid rgba(94,194,194,0.2)',
-                  borderRadius: '999px',
-                  padding: '6px 16px',
-                  display: 'flex',
-                  gap: '6px',
-                  alignItems: 'center',
-                }}
-              >
+              <div key={s.value} className="modal-meta-pill">
                 <span style={{ fontSize: '11px' }}>{s.icon}</span>
                 <span className="font-nav" style={{ color: '#5EC2C2', fontSize: '9px' }}>{s.value}</span>
               </div>

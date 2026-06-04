@@ -60,7 +60,7 @@ const destinations = [
       'Nanga Parbat Basecamp trek (4,200m)',
       'Raikot Bridge dramatic gorge entry',
       'Beyal Camp sunrise — 8,126m peak up close',
-      'Jeep ride on one of world's most thrilling roads',
+      "Jeep ride on one of world's most thrilling roads",
       'Stargazing at altitude with zero light pollution',
     ],
     about:
@@ -95,7 +95,7 @@ function DestinationModal({ dest, onClose }: { dest: Destination; onClose: () =>
     <Modal isOpen onClose={onClose} maxWidth="680px">
       <div style={{ position: 'relative' }}>
         {/* Hero image */}
-        <div style={{ position: 'relative', height: '260px', borderRadius: '16px 16px 0 0', overflow: 'hidden' }}>
+        <div className="modal-hero-img-container" style={{ borderRadius: '16px 16px 0 0' }}>
           <Image
             src={dest.url}
             alt={dest.name}
@@ -104,7 +104,7 @@ function DestinationModal({ dest, onClose }: { dest: Destination; onClose: () =>
             sizes="680px"
           />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(17,24,24,1) 0%, rgba(17,24,24,0.3) 60%, transparent 100%)' }} />
-          <div style={{ position: 'absolute', bottom: '1.5rem', left: '2rem' }}>
+          <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', right: '1.5rem' }}>
             <p className="font-nav" style={{ color: '#5EC2C2', fontSize: '10px', marginBottom: '6px' }}>EXPEDITION REGION</p>
             <h2 className="font-display" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', letterSpacing: '0.05em', color: '#FAFAFA', lineHeight: 1 }}>
               {dest.name}
@@ -113,26 +113,15 @@ function DestinationModal({ dest, onClose }: { dest: Destination; onClose: () =>
         </div>
 
         {/* Content */}
-        <div style={{ padding: '2rem' }}>
+        <div className="modal-content-padding">
           {/* Meta pills */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '1.5rem' }}>
+          <div className="modal-meta-pills">
             {[
               { label: '⏱ Duration', value: dest.duration },
               { label: '🏔 Altitude', value: dest.altitude },
               { label: '🗓 Best Time', value: dest.bestTime },
             ].map((m) => (
-              <div
-                key={m.label}
-                style={{
-                  background: 'rgba(94,194,194,0.08)',
-                  border: '1px solid rgba(94,194,194,0.2)',
-                  borderRadius: '999px',
-                  padding: '6px 16px',
-                  display: 'flex',
-                  gap: '6px',
-                  alignItems: 'center',
-                }}
-              >
+              <div key={m.label} className="modal-meta-pill">
                 <span className="font-nav" style={{ color: '#888', fontSize: '9px' }}>{m.label}</span>
                 <span className="font-nav" style={{ color: '#5EC2C2', fontSize: '9px' }}>{m.value}</span>
               </div>
@@ -147,7 +136,7 @@ function DestinationModal({ dest, onClose }: { dest: Destination; onClose: () =>
           {/* Highlights */}
           <div style={{ marginBottom: '2rem' }}>
             <p className="font-nav" style={{ color: '#5EC2C2', fontSize: '10px', marginBottom: '1rem' }}>HIGHLIGHTS</p>
-            <ul style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', listStyle: 'none', padding: 0 }}>
+            <ul className="modal-grid-2col">
               {dest.highlights.map((h) => (
                 <li key={h} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
                   <span style={{ color: '#5EC2C2', marginTop: '3px', flexShrink: 0 }}>›</span>

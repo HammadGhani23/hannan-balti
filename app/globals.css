@@ -328,4 +328,106 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  /* Responsive Modals for Mobile (iOS & Android) and Desktop */
+  .modal-wrapper {
+    width: 100%;
+    background: rgba(17, 24, 24, 0.95);
+    border: 1px solid rgba(94, 194, 194, 0.18);
+    border-radius: 16px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    max-height: 90dvh;
+    max-height: 90vh; /* fallback */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch; /* smooth inertia scrolling on iOS */
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(10, 15, 15, 0.75);
+    border: 1px solid rgba(94, 194, 194, 0.3);
+    color: #5EC2C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .modal-close-btn:hover {
+    background: rgba(94, 194, 194, 0.2);
+    border-color: #5EC2C2;
+    transform: scale(1.05);
+  }
+
+  .modal-close-btn:active {
+    transform: scale(0.95);
+  }
+
+  .modal-hero-img-container {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .modal-hero-img-container {
+      height: 280px;
+    }
+  }
+
+  .modal-content-padding {
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .modal-content-padding {
+      padding: 2.25rem 2.5rem;
+    }
+  }
+
+  .modal-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 640px) {
+    .modal-grid-2col {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .modal-meta-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-meta-pill {
+    background: rgba(94, 194, 194, 0.08);
+    border: 1px solid rgba(94, 194, 194, 0.2);
+    border-radius: 999px;
+    padding: 6px 14px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
 }
+

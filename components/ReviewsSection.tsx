@@ -61,7 +61,7 @@ const StarRating = ({ count = 5 }: { count?: number }) => (
 function ReviewModal({ review, onClose }: { review: Review; onClose: () => void }) {
   return (
     <Modal isOpen onClose={onClose} maxWidth="620px">
-      <div style={{ padding: '2.5rem 2rem 2rem' }}>
+      <div className="modal-content-padding" style={{ paddingTop: '2.5rem' }}>
         {/* Stars */}
         <div style={{ marginBottom: '1.25rem' }}>
           <StarRating count={review.rating} />
@@ -100,24 +100,13 @@ function ReviewModal({ review, onClose }: { review: Review; onClose: () => void 
         </div>
 
         {/* Meta pills */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '1.75rem' }}>
+        <div className="modal-meta-pills">
           {[
             { label: '📅 Trip Date', value: review.tripDate },
             { label: '👥 Group Type', value: review.groupType },
             { label: '🌍 From', value: review.country },
           ].map((m) => (
-            <div
-              key={m.label}
-              style={{
-                background: 'rgba(94,194,194,0.07)',
-                border: '1px solid rgba(94,194,194,0.18)',
-                borderRadius: '999px',
-                padding: '6px 14px',
-                display: 'flex',
-                gap: '6px',
-                alignItems: 'center',
-              }}
-            >
+            <div key={m.label} className="modal-meta-pill">
               <span className="font-nav" style={{ color: '#888', fontSize: '9px' }}>{m.label}</span>
               <span className="font-nav" style={{ color: '#5EC2C2', fontSize: '9px' }}>{m.value}</span>
             </div>
