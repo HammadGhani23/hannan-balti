@@ -80,11 +80,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 pt-6 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="font-nav text-[#888888] text-[10px] tracking-widest text-center">
-            TRIPGO.PK
-          </p>
-          <p className="font-nav text-[#888888]/50 text-[10px] tracking-wider">
+        <div className="mt-10 pt-6 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p className="font-nav text-[#5EC2C2] text-[10px] tracking-widest">
+              TRIPGO.PK
+            </p>
+            <p className="font-nav text-[#888888]/70 text-[9px] tracking-wide">
+              Hannan Balti's official travel company — organising expert-guided tours across Northern Pakistan.
+            </p>
+          </div>
+          <p className="font-nav text-[#888888]/50 text-[10px] tracking-wider whitespace-nowrap">
             © {new Date().getFullYear()} HANNAN BALTI TOURS. ALL RIGHTS RESERVED.
           </p>
         </div>
