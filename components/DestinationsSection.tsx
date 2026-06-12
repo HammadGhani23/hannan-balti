@@ -179,7 +179,7 @@ function DestinationCard({
       onMouseLeave={() => setHovered(false)}
       onClick={onOpen}
       className="relative overflow-hidden rounded-xl cursor-pointer group"
-      style={{ height: 'clamp(170px, 20vw, 260px)' }}
+      style={{ height: 'clamp(200px, 22vw, 300px)' }}
       data-cursor-hover
     >
       {/* Background image: scales 1.03x on hover */}
@@ -193,6 +193,7 @@ function DestinationCard({
           alt={`${dest.name} — adventure journey landscape`}
           fill
           className="object-cover"
+          style={{ objectPosition: dest.id === 'hunza' ? 'center 70%' : dest.id === 'skardu' ? 'center 50%' : dest.id === 'fairy' ? 'center 40%' : 'center 50%' }}
           sizes="100vw"
         />
       </motion.div>
