@@ -63,7 +63,7 @@ export default function Hero() {
           fill
           priority
           className="object-cover"
-          style={{ objectPosition: 'center 20%' }}
+          style={{ objectPosition: 'center 55%' }}
           sizes="100vw"
         />
         {/* Cinematic color grade overlay: cool-to-warm */}
@@ -134,7 +134,7 @@ export default function Hero() {
             fill
             priority
             className="object-cover"
-            style={{ objectPosition: 'center 20%' }}
+            style={{ objectPosition: 'center 55%' }}
             sizes="100vw"
             aria-hidden="true"
           />
