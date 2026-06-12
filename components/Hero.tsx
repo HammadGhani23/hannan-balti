@@ -62,7 +62,8 @@ export default function Hero() {
           alt="Hannan Balti — Client standing on one foot in tree pose in front of blossom trees and snowy peaks"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: 'center 20%' }}
           sizes="100vw"
         />
         {/* Cinematic color grade overlay: cool-to-warm */}
@@ -132,7 +133,8 @@ export default function Hero() {
             alt=""
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover"
+            style={{ objectPosition: 'center 20%' }}
             sizes="100vw"
             aria-hidden="true"
           />
@@ -170,7 +172,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://wa.me/923001234567"
+            href="https://wa.me/923349665758"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-30 hover:opacity-100 text-[#FAFAFA] transition-opacity duration-300"
