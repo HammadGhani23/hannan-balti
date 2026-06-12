@@ -95,7 +95,7 @@ export default function Navigation() {
               </svg>
             </a>
             <a
-              href="https://youtube.com/@hannanbalti"
+              href="https://www.youtube.com/@hannanbalti3438"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-40 hover:opacity-100 transition-opacity duration-300"

@@ -185,7 +185,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://youtube.com/@hannanbalti"
+            href="https://www.youtube.com/@hannanbalti3438"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-30 hover:opacity-100 text-[#FAFAFA] transition-opacity duration-300"

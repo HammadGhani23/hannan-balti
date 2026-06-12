@@ -65,7 +65,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://youtube.com/@hannanbalti"
+              href="https://www.youtube.com/@hannanbalti3438"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-30 hover:opacity-80 transition-opacity duration-300"
