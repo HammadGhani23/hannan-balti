@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const polaroidCards = [
   {
-    url: '/images/client_tree_pose.jpg',
+    url: '/images/client_tree_pose_enhanced.png',
     caption: '4 epic destinations',
     label: 'Hunza Valley',
   },
@@ -58,12 +58,13 @@ export default function Hero() {
         style={{ y: bgY, willChange: 'transform' }}
       >
         <Image
-          src="/images/client_tree_pose.jpg"
-          alt="Hannan Balti — Client standing on one foot in tree pose in front of blossom trees and snowy peaks"
+          src="/images/client_tree_pose_enhanced.png"
+          alt="Hannan Balti — Client standing in tree pose in front of blossom trees and snowy peaks, Hunza Valley"
           fill
           priority
+          quality={100}
           className="object-cover"
-          style={{ objectPosition: 'center 55%' }}
+          style={{ objectPosition: 'center 55%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
           sizes="100vw"
         />
         {/* Cinematic color grade overlay: cool-to-warm */}
@@ -129,12 +130,13 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/images/client_tree_pose.jpg"
+            src="/images/client_tree_pose_enhanced.png"
             alt=""
             fill
             priority
+            quality={100}
             className="object-cover"
-            style={{ objectPosition: 'center 55%' }}
+            style={{ objectPosition: 'center 55%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
             sizes="100vw"
             aria-hidden="true"
           />
