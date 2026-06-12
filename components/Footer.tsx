@@ -54,7 +54,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://wa.me/923001234567"
+              href="https://wa.me/923349665758"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-30 hover:opacity-80 transition-opacity duration-300"
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-white/[0.05] flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="font-nav text-[#888888] text-[10px] tracking-widest text-center">
-            NORTHERN PAKISTAN ADVENTURE TOURS · SKARDU · HUNZA · FAIRY MEADOWS · CHITRAL
+            TRIPGO.PK
           </p>
           <p className="font-nav text-[#888888]/50 text-[10px] tracking-wider">
             © {new Date().getFullYear()} HANNAN BALTI TOURS. ALL RIGHTS RESERVED.

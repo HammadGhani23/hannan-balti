@@ -8,7 +8,7 @@ export default function WhatsAppBubble() {
 
   return (
     <a
-      href="https://wa.me/923001234567"
+      href="https://wa.me/923349665758"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-50 flex items-center gap-3"

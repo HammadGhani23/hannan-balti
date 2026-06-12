@@ -33,7 +33,14 @@ export default function ContactSection() {
     const waText = encodeURIComponent(
       `Hi Hannan! I'm interested in booking a tour.\n\nName: ${formData.name}\nEmail: ${formData.email}\nWhatsApp: ${formData.whatsapp}\nDestination: ${formData.destination}\nTravel Dates: ${formData.dates}\n\nMessage/Questions: ${formData.message}`
     );
-    window.open(`https://wa.me/923001234567?text=${waText}`, '_blank');
+    // Send to WhatsApp
+    window.open(`https://wa.me/923349665758?text=${waText}`, '_blank');
+    // Send to Email
+    const emailSubject = encodeURIComponent(`Tour Booking Inquiry — ${formData.destination}`);
+    const emailBody = encodeURIComponent(
+      `New booking inquiry from the website:\n\nName: ${formData.name}\nEmail: ${formData.email}\nWhatsApp: ${formData.whatsapp}\nDestination: ${formData.destination}\nTravel Dates: ${formData.dates}\n\nMessage/Questions:\n${formData.message}`
+    );
+    window.location.href = `mailto:tripgo.pk@gmail.com?subject=${emailSubject}&body=${emailBody}`;
   };
 
   return (
@@ -179,7 +186,7 @@ export default function ContactSection() {
           {/* Side-by-side Contact Pills */}
           <div className="flex flex-wrap gap-4 mt-8 border-t border-white/5 pt-6 justify-between">
             <a
-              href="https://wa.me/923001234567"
+              href="https://wa.me/923349665758"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full border border-white/10 font-nav text-[10px] text-[#5EC2C2] tracking-widest hover:border-[#5EC2C2] transition-all duration-300"
