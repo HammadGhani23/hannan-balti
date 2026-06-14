@@ -64,7 +64,7 @@ export default function Hero() {
           priority
           quality={100}
           className="object-cover"
-          style={{ objectPosition: 'center 55%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
+          style={{ objectPosition: 'center 60%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
           sizes="100vw"
         />
         {/* Cinematic color grade overlay: cool-to-warm */}
@@ -136,7 +136,7 @@ export default function Hero() {
             priority
             quality={100}
             className="object-cover"
-            style={{ objectPosition: 'center 55%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
+            style={{ objectPosition: 'center 60%', filter: 'contrast(1.08) saturate(1.15) brightness(1.03)' }}
             sizes="100vw"
             aria-hidden="true"
           />
